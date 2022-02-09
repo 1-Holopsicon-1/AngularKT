@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import  { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  template: `<card-comp-one></card-comp-one>
+             <card-comp-two></card-comp-two>`
 })
-export class AppComponent {
-  title = 'Kt';
-}
+export class AppComponent {}

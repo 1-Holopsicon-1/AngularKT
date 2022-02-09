@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "card-comp",
+  selector: "card-comp-one",
   template: `
     <table>
       <tr>
@@ -14,16 +14,14 @@ import { Component } from "@angular/core";
         <th>published</th>
         <th>publisher</th>
       </tr>
-      <tr>
         <td>{{id}}</td>
         <td>{{title}}</td>
         <td>{{author}}</td>
         <td>{{genre}}</td>
         <td style="width: 100px">{{description}}</td>
-        <td><img src="{{image}}" style="width: 20px" height="20px"></td>
+        <td><img src="{{image}}" style="width: 100px; height: 100px"></td>
         <td>{{published}}</td>
         <td>{{publisher}}</td>
-      </tr>
     </table>
   `,
   styles: [`table, th, td {
@@ -32,7 +30,7 @@ import { Component } from "@angular/core";
 
 })
 
-export class Card {
+export class CardOne {
   id: number =  1;
   title: string = "In a little.";
   author: string = "Wyatt Connelly";
